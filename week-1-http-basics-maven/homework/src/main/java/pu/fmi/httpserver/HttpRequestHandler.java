@@ -81,7 +81,7 @@ public class HttpRequestHandler {
     return new HttpResponse<>(HttpStatus.OK, "Notification updated");
   }
 
-  private HttpResponse<String> delete(String path) {
+  private HttpResponse<String> delete(String path) { //soft delete reuse line 100 XD
     Notification notification = find(path);
 
     if (notification == null) {
